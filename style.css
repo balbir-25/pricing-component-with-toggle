@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 1340px;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-size: contain contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: top right, left bottom;
+    text-align: center;
+    align-items: center;
+     position: relative;
+  }
+
+  /* ============================START MAIN AREA================================ */
+  
+  .site-h1{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    color: hsl(232, 13%, 33%);
+    font-weight: 700;
+    padding-top: 5rem;
+  }
+
+  .toggle{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+    align-items: center;
+  }
+
+  .plan{
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    color: hsl(233, 13%, 49%);
+  }
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 100%;
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* ============================START PRICE DIV AREA======================== */
+  #price{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .price-box{
+    padding: 3rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 2px hsl(232, 13%, 33%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 530px;
+  }
+
+  .price-span{
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    color:  hsl(232, 13%, 33%);
+  }
+
+  .price-h2{
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    color:  hsl(232, 13%, 33%);
+    margin-top: 2rem;
+  }
+
+  .detail{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info-span{
+     font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    color:  hsl(232, 13%, 33%);
+  }
+
+  .btn{
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: hsl(240, 78%, 98%);
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background: transparent;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+  }
+
+  .box{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   height: 560px;
+   margin-left: -10px;
+   margin-right: -10px;
+    z-index: 1;
+  }
+
+  #pro, .box .info-span{
+    color: hsl(240, 78%, 98%);
+  }
+
+  .box .btn{
+    margin-top: 3rem;
+  }
+
+  .box .btn:hover{
+    border: 1px solid hsl(240, 78%, 98%);
+    color: hsl(240, 78%, 98%);
+  }
+
+  /* ============================END PRICE DIV AREA======================== */
+  /* ============================END MAIN AREA================================ */
+  /* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(240, 10%, 16%);
+    float: bottom;
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+  /* ============================START MEDIA QUERY============================ */
+  /* ===============================768PX================================ */
+  @media screen and (max-width:768px) {
+    body{
+        min-width: 768px;
+    }
+
+    #price{
+        padding: 0rem 2rem;
+    }
+
+    .price-box{
+        height: 560px;
+        padding: 3rem 2rem;
+    }
+
+    .box{
+        height:590px;
+    }
+  }
+  /* ===============================375PX================================ */
+  @media screen and (max-width:375px) {
+    body{
+        min-width: 375px;
+    }
+
+    .toggle{
+        gap: 1rem;
+    }
+
+    #price{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .box, .price-box{
+        height: auto;
+        padding: 3rem 1rem;
+    }
+  }
+  /* ============================END MEDIA QUERY============================ */
